@@ -112,9 +112,11 @@ go
 print('Creating table ticket_purchase_hist...')
 go
 :r .\schema\ticket_purchase_hist.tab
+print('Creating email queue...')
+go
+:r .\schema\confirmation_email_queue.vw
 print('installing procedure generate_tickets...')
 go
-
 print('Loading utility objects...')
 print('Creating view getNewId')
 go
